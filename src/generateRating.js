@@ -5,6 +5,11 @@ export const generateRating = () => {
     const ratingDiv = document.createElement('div');
     ratingDiv.setAttribute('class', 'rating-div')
 
+    const starIconDiv = document.createElement('div')
+    starIconDiv.setAttribute('class', 'star-icon-div')
+    const starIcon = document.createElement('i')
+    starIcon.setAttribute('class', 'fa-solid fa-star')
+
     const ratingHeader = document.createElement('h3');
     ratingHeader.textContent = 'How did we do?';
 
@@ -29,7 +34,8 @@ export const generateRating = () => {
     const submitRateBtn = document.createElement('button');
     submitRateBtn.textContent = 'submit'
 
-    ratingDiv.append(ratingHeader, ratingParagraph, ratingsDiv, submitRateBtn);
+    starIconDiv.appendChild(starIcon)
+    ratingDiv.append(starIconDiv, ratingHeader, ratingParagraph, ratingsDiv, submitRateBtn);
     app.appendChild(ratingDiv)
     
 }

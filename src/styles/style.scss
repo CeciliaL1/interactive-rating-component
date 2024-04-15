@@ -21,8 +21,26 @@ body {
   border-radius: 10px;
   color: white;
 
+  .star-icon-div {
+    display: flex;
+    align-items: center;
+    background-color: rgba(124, 135, 152, 0.1);
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+
+
+    i {
+      color: rgb(251, 116, 19);
+      font-size: 0.8rem;
+      padding: 13px;
+    }
+  }
+
   h3 {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   p {
@@ -39,18 +57,20 @@ body {
       display: flex;
       align-items: center;
       background-color: rgba(124, 135, 152, 0.1);
-      height: 35px;
+      height: 40px;
       width: 40px;
-      margin: 10px;
+      margin: 6px;
       border-radius: 100px;
       margin-bottom: 20px;
 
 
       p {
+
         color: white;
         font-size: 0.8rem;
         text-align: center;
-        margin-left: 14px;
+        padding: 15px;
+
 
       }
     }
