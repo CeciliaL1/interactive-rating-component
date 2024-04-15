@@ -1,4 +1,5 @@
 import { changeBackground } from "./whenSelectedRating";
+import { submitRating } from "./submitRating";
 
 export const generateRating = () => {
     const ratings = [1, 2, 3, 4, 5]
@@ -39,8 +40,8 @@ export const generateRating = () => {
     const submitRateBtn = document.createElement('button');
     submitRateBtn.textContent = 'submit'
 
-    submitRateBtn.addEventListener('click', ()=>{
-        
+    submitRateBtn.addEventListener('click', (e)=>{
+        submitRating(e)
     })
 
     starIconDiv.appendChild(starIcon)
