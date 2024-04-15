@@ -1,3 +1,4 @@
+import { changeBackground } from "./whenSelectedRating";
 
 export const generateRating = () => {
     const ratings = [1, 2, 3, 4, 5]
@@ -20,6 +21,7 @@ export const generateRating = () => {
 
     const ratingsDiv = document.createElement('div');
     ratingsDiv.setAttribute('class', 'ratings-div')
+    
 
     ratings.forEach(rating => {
         const singleRatingDiv = document.createElement('div');
@@ -27,12 +29,19 @@ export const generateRating = () => {
         const singleRating = document.createElement('p')
         singleRating.textContent = rating;
 
+        singleRatingDiv.addEventListener('click', (e) => {
+            changeBackground(e)
+        })
         singleRatingDiv.append(singleRating)
         ratingsDiv.append(singleRatingDiv)
     })
 
     const submitRateBtn = document.createElement('button');
     submitRateBtn.textContent = 'submit'
+
+    submitRateBtn.addEventListener('click', ()=>{
+        console.log('click')
+    })
 
     starIconDiv.appendChild(starIcon)
     ratingDiv.append(starIconDiv, ratingHeader, ratingParagraph, ratingsDiv, submitRateBtn);
