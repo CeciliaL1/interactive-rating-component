@@ -40,7 +40,7 @@ export const generateRating = () => {
     submitRateBtn.textContent = 'submit'
 
     submitRateBtn.addEventListener('click', ()=>{
-        console.log('click')
+        
     })
 
     starIconDiv.appendChild(starIcon)
