@@ -1,5 +1,5 @@
-import { changeBackground } from "./whenSelectedRating";
-import { submitRating } from "./submitRating";
+import { changeBackground } from "./whenSelectedRating.js";
+import { submitRating } from "./submitRating.js";
 
 export const generateRating = () => {
     const ratings = [1, 2, 3, 4, 5]

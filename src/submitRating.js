@@ -1,4 +1,4 @@
-import { generateThankYou } from "./generateResult";
+import { generateThankYou } from "./generateResult.js";
 
 export const submitRating = (e) => {
     const target = e.target.parentNode.childNodes[3].childNodes
