@@ -1,5 +1,5 @@
 import { generateRating } from './generateRating.js'
-import './styles/style.scss'
+import './styles/style.css'
 
 
 /***
